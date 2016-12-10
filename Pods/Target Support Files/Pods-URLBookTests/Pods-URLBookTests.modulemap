@@ -1,0 +1,6 @@
+framework module Pods_URLBookTests {
+  umbrella header "Pods-URLBookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
