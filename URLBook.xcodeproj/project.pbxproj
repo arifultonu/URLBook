@@ -18,6 +18,9 @@
 		EC021D4D1DD5C9380066D7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC021D4B1DD5C9380066D7E8 /* LaunchScreen.storyboard */; };
 		EC021D581DD5C9380066D7E8 /* URLBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC021D571DD5C9380066D7E8 /* URLBookTests.swift */; };
 		EC021D631DD5C9380066D7E8 /* URLBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC021D621DD5C9380066D7E8 /* URLBookUITests.swift */; };
+		EC160C061E00595200172765 /* google@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC160C051E00595200172765 /* google@1x.png */; };
+		EC160C091E0059E000172765 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC160C081E0059E000172765 /* MaterialView.swift */; };
+		EC160C0B1E00669A00172765 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC160C0A1E00669A00172765 /* ItemCell.swift */; };
 		ECB556D31DFC782F00658CBD /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB556CB1DFC782F00658CBD /* ItemType+CoreDataClass.swift */; };
 		ECB556D41DFC782F00658CBD /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB556CC1DFC782F00658CBD /* ItemType+CoreDataProperties.swift */; };
 		ECB556D51DFC782F00658CBD /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB556CD1DFC782F00658CBD /* Item+CoreDataClass.swift */; };
@@ -39,7 +42,6 @@
 		ECFCB6481DFF171800266D9F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFCB6471DFF171800266D9F /* MessageUI.framework */; };
 		ECFCB64A1DFF172500266D9F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFCB6491DFF172500266D9F /* StoreKit.framework */; };
 		ECFCB64C1DFF173000266D9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFCB64B1DFF173000266D9F /* SystemConfiguration.framework */; };
-		ECFCB64E1DFF2A3800266D9F /* 1478967306_new-google-favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFCB64D1DFF2A3800266D9F /* 1478967306_new-google-favicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,9 @@
 		EC021D5E1DD5C9380066D7E8 /* URLBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC021D621DD5C9380066D7E8 /* URLBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBookUITests.swift; sourceTree = "<group>"; };
 		EC021D641DD5C9380066D7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC160C051E00595200172765 /* google@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google@1x.png"; sourceTree = "<group>"; };
+		EC160C081E0059E000172765 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		EC160C0A1E00669A00172765 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		ECB556CB1DFC782F00658CBD /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ECB556CC1DFC782F00658CBD /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECB556CD1DFC782F00658CBD /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -104,7 +109,6 @@
 		ECFCB6471DFF171800266D9F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ECFCB6491DFF172500266D9F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		ECFCB64B1DFF173000266D9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		ECFCB64D1DFF2A3800266D9F /* 1478967306_new-google-favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1478967306_new-google-favicon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,15 +213,16 @@
 		EC021D3E1DD5C9380066D7E8 /* URLBook */ = {
 			isa = PBXGroup;
 			children = (
+				EC160C071E00598F00172765 /* View */,
 				ECB556DB1DFC783600658CBD /* Model */,
 				EC021D3F1DD5C9380066D7E8 /* AppDelegate.swift */,
 				EC021D411DD5C9380066D7E8 /* MainVC.swift */,
+				EC160C051E00595200172765 /* google@1x.png */,
 				EC021D431DD5C9380066D7E8 /* Main.storyboard */,
 				EC021D491DD5C9380066D7E8 /* Assets.xcassets */,
 				EC021D4B1DD5C9380066D7E8 /* LaunchScreen.storyboard */,
 				EC021D4E1DD5C9380066D7E8 /* Info.plist */,
 				EC021D461DD5C9380066D7E8 /* URLBook.xcdatamodeld */,
-				ECFCB64D1DFF2A3800266D9F /* 1478967306_new-google-favicon.png */,
 			);
 			path = URLBook;
 			sourceTree = "<group>";
@@ -238,6 +243,15 @@
 				EC021D641DD5C9380066D7E8 /* Info.plist */,
 			);
 			path = URLBookUITests;
+			sourceTree = "<group>";
+		};
+		EC160C071E00598F00172765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC160C081E0059E000172765 /* MaterialView.swift */,
+				EC160C0A1E00669A00172765 /* ItemCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		ECB556DB1DFC783600658CBD /* Model */ = {
@@ -380,9 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC021D4D1DD5C9380066D7E8 /* LaunchScreen.storyboard in Resources */,
+				EC160C061E00595200172765 /* google@1x.png in Resources */,
 				EC021D4A1DD5C9380066D7E8 /* Assets.xcassets in Resources */,
 				EC021D451DD5C9380066D7E8 /* Main.storyboard in Resources */,
-				ECFCB64E1DFF2A3800266D9F /* 1478967306_new-google-favicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,9 +559,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC160C0B1E00669A00172765 /* ItemCell.swift in Sources */,
 				ECB556D61DFC782F00658CBD /* Item+CoreDataProperties.swift in Sources */,
 				ECB556D51DFC782F00658CBD /* Item+CoreDataClass.swift in Sources */,
 				ECB556D31DFC782F00658CBD /* ItemType+CoreDataClass.swift in Sources */,
+				EC160C091E0059E000172765 /* MaterialView.swift in Sources */,
 				ECB556D41DFC782F00658CBD /* ItemType+CoreDataProperties.swift in Sources */,
 				ECB556D81DFC782F00658CBD /* Store+CoreDataProperties.swift in Sources */,
 				EC021D481DD5C9380066D7E8 /* URLBook.xcdatamodeld in Sources */,
