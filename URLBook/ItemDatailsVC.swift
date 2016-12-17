@@ -12,8 +12,12 @@ class ItemDatailsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+       // Navigation item controll.
+        if let topNavigationItem = self.navigationController?.navigationBar.topItem{
+            topNavigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
