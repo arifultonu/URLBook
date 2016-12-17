@@ -10,6 +10,10 @@ import UIKit
 
 class ItemDatailsVC: UIViewController {
 
+    @IBOutlet weak var titleField: CustomTextField!
+    @IBOutlet weak var categoryField: CustomTextField!
+    @IBOutlet weak var detailsField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,14 +30,35 @@ class ItemDatailsVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+ 
+    @IBAction func savePressed(_ sender: UIButton) {
+        let item = Item(context: context)
+        
+        if let title = titleField.text{
+        item.title = title
+        }
+        
+        if let category = categoryField.text{
+            item.category = category
+        }
+        
+        if let details = detailsField.text{
+            item.details = details
+        }
+        
+       ad.saveContext()
+        
+       _ = navigationController?.popViewController(animated: true)
+        
+        
     }
-    */
+    
+    
+    
+    
+    
+    
+    
+    
 
 }

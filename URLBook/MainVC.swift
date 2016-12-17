@@ -94,6 +94,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, GADB
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
+        controller.delegate = self
+        
         self.controller = controller
         
         do {

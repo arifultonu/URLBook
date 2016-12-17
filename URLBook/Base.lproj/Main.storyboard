@@ -227,6 +227,9 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="0.99198132753372192" green="0.99604541063308716" blue="0.99596863985061646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="QuZ-3y-Ijw" eventType="touchUpInside" id="eEk-dK-Da1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,6 +263,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit" id="v8X-AT-U2n"/>
+                    <connections>
+                        <outlet property="categoryField" destination="DCG-Cw-CHq" id="58c-Wc-PPt"/>
+                        <outlet property="detailsField" destination="lT5-Wa-AcE" id="d9L-J6-LM3"/>
+                        <outlet property="titleField" destination="0h0-VJ-etr" id="dOS-6F-sSH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sg-Er-JuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
