@@ -38,7 +38,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, GADB
         adBanner.load(request)
         // Google AdMod End
         
-        generateTestData()
+        //generateTestData()
         attemptFetch()
     }
 
@@ -196,12 +196,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, GADB
         item3.title = "FaceBook"
         item3.category = "Social"
         item3.details = "www.facebook.com"
-        
-        
-        
-        
-        
-        
+       
     }
     
     
