@@ -40,12 +40,15 @@
                                     <segment title="Category"/>
                                     <segment title="Title"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortBySegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="ef2-RW-xrM"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQm-aM-HpH">
                                 <rect key="frame" x="0.0" y="117" width="375" height="500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="127" id="002-4I-2Fo" customClass="ItemCell" customModule="URLBook" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="127" id="002-4I-2Fo" customClass="ItemCell" customModule="URLBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="002-4I-2Fo" id="ybs-fL-Lqd">
@@ -174,7 +177,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageView" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-fY-xm1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageView" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-fY-xm1">
                                 <rect key="frame" x="123" y="116" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="CQN-57-2vd"/>
@@ -187,6 +190,9 @@
                                     <constraint firstAttribute="height" constant="128" id="AY7-Ka-0VJ"/>
                                     <constraint firstAttribute="width" constant="128" id="Xdo-rq-lx1"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="QuZ-3y-Ijw" eventType="touchUpInside" id="FG4-ES-nSi"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-VJ-etr">
                                 <rect key="frame" x="16" y="264" width="343" height="30"/>
@@ -266,6 +272,7 @@
                     <connections>
                         <outlet property="categoryField" destination="DCG-Cw-CHq" id="58c-Wc-PPt"/>
                         <outlet property="detailsField" destination="lT5-Wa-AcE" id="d9L-J6-LM3"/>
+                        <outlet property="thumbImg" destination="fcJ-fY-xm1" id="f8R-lJ-DP8"/>
                         <outlet property="titleField" destination="0h0-VJ-etr" id="dOS-6F-sSH"/>
                     </connections>
                 </viewController>

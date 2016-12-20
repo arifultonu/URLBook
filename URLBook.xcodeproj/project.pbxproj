@@ -22,7 +22,7 @@
 		EC160C061E00595200172765 /* google@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC160C051E00595200172765 /* google@1x.png */; };
 		EC160C091E0059E000172765 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC160C081E0059E000172765 /* MaterialView.swift */; };
 		EC160C0B1E00669A00172765 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC160C0A1E00669A00172765 /* ItemCell.swift */; };
-		EC21BE321E0446D800BFF13D /* ItemDatailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21BE311E0446D800BFF13D /* ItemDatailsVC.swift */; };
+		EC1C8EE31E05A53000946AC6 /* ItemDatailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21BE311E0446D800BFF13D /* ItemDatailsVC.swift */; };
 		EC21BE341E044B1700BFF13D /* ItemDetailWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21BE331E044B1700BFF13D /* ItemDetailWebVC.swift */; };
 		ECB556D31DFC782F00658CBD /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB556CB1DFC782F00658CBD /* ItemType+CoreDataClass.swift */; };
 		ECB556D41DFC782F00658CBD /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB556CC1DFC782F00658CBD /* ItemType+CoreDataProperties.swift */; };
@@ -221,9 +221,9 @@
 			children = (
 				EC160C071E00598F00172765 /* View */,
 				ECB556DB1DFC783600658CBD /* Model */,
-				EC021D3F1DD5C9380066D7E8 /* AppDelegate.swift */,
 				EC15F0B81E03F7DC00ACF772 /* Controller */,
 				EC15F0B61E03EF9C00ACF772 /* CustomTextField.swift */,
+				EC021D3F1DD5C9380066D7E8 /* AppDelegate.swift */,
 				EC160C051E00595200172765 /* google@1x.png */,
 				EC021D431DD5C9380066D7E8 /* Main.storyboard */,
 				EC021D491DD5C9380066D7E8 /* Assets.xcassets */,
@@ -584,10 +584,10 @@
 				EC160C091E0059E000172765 /* MaterialView.swift in Sources */,
 				ECB556D41DFC782F00658CBD /* ItemType+CoreDataProperties.swift in Sources */,
 				ECB556D81DFC782F00658CBD /* Store+CoreDataProperties.swift in Sources */,
+				EC1C8EE31E05A53000946AC6 /* ItemDatailsVC.swift in Sources */,
 				EC021D481DD5C9380066D7E8 /* URLBook.xcdatamodeld in Sources */,
 				EC21BE341E044B1700BFF13D /* ItemDetailWebVC.swift in Sources */,
 				ECB556D71DFC782F00658CBD /* Store+CoreDataClass.swift in Sources */,
-				EC21BE321E0446D800BFF13D /* ItemDatailsVC.swift in Sources */,
 				EC021D421DD5C9380066D7E8 /* MainVC.swift in Sources */,
 				EC021D401DD5C9380066D7E8 /* AppDelegate.swift in Sources */,
 				ECB556D91DFC782F00658CBD /* Image+CoreDataClass.swift in Sources */,

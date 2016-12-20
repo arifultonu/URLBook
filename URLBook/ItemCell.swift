@@ -19,6 +19,7 @@ class ItemCell: UITableViewCell {
         title.text = item.title
         category.text = item.category
         details.text = item.details
+        thumb.image = item.toImage?.image as? UIImage
     }
     
     
