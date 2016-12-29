@@ -9,7 +9,13 @@
 import UIKit
 
 class ItemDetailWebVC: UIViewController {
-
+    
+    
+    @IBOutlet weak var WebView: UIWebView!
+    @IBOutlet weak var ActInd: UIActivityIndicatorView!
+    @IBOutlet weak var SearchBar: UISearchBar!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

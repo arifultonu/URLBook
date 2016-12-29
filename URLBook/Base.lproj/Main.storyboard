@@ -298,19 +298,38 @@
                                     <constraint firstAttribute="height" constant="44" id="XjK-d8-Otc"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Item" id="o18-qw-QoS"/>
-                                    <barButtonItem title="Item" id="YoG-dm-iLG"/>
+                                    <barButtonItem systemItem="stop" id="o18-qw-QoS">
+                                        <connections>
+                                            <action selector="stopLoading" destination="Leh-Hf-L7C" id="ogQ-iv-Fwf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="YoG-dm-iLG">
+                                        <connections>
+                                            <action selector="reload" destination="Leh-Hf-L7C" id="UFT-Lx-YJd"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="NUn-CH-TCx"/>
-                                    <barButtonItem title="Item" id="UfC-YN-w7K"/>
-                                    <barButtonItem title="Item" id="VCF-s4-nFi"/>
+                                    <barButtonItem systemItem="rewind" id="UfC-YN-w7K">
+                                        <connections>
+                                            <action selector="goBack" destination="Leh-Hf-L7C" id="oXu-fF-rGG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="VCF-s4-nFi">
+                                        <connections>
+                                            <action selector="goForward" destination="Leh-Hf-L7C" id="VKr-a1-aIj"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Leh-Hf-L7C">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Leh-Hf-L7C">
                                 <rect key="frame" x="0.0" y="108" width="375" height="515"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="515" id="4Lp-Aa-oRt"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="o7W-cf-eNd" id="lws-AX-dnW"/>
+                                </connections>
                             </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="e41-4I-72B">
                                 <rect key="frame" x="169" y="347" width="37" height="37"/>
@@ -322,6 +341,9 @@
                                     <constraint firstAttribute="height" constant="44" id="hsz-iH-8a1"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="o7W-cf-eNd" id="Ldw-0a-6xf"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,6 +364,11 @@
                             <constraint firstItem="e41-4I-72B" firstAttribute="centerX" secondItem="paU-y3-YO8" secondAttribute="centerX" id="xql-O9-tNA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ActInd" destination="e41-4I-72B" id="0Je-71-4MV"/>
+                        <outlet property="SearchBar" destination="AKm-6a-YbS" id="2vm-ab-lKA"/>
+                        <outlet property="WebView" destination="Leh-Hf-L7C" id="8wA-N3-9Im"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sk5-vg-bK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
