@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iXp-B6-GoO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iXp-B6-GoO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -292,17 +292,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-tD-usp">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yd-SY-MkT">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XjK-d8-Otc"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="o18-qw-QoS"/>
+                                    <barButtonItem title="Item" id="YoG-dm-iLG"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NUn-CH-TCx"/>
+                                    <barButtonItem title="Item" id="UfC-YN-w7K"/>
+                                    <barButtonItem title="Item" id="VCF-s4-nFi"/>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Leh-Hf-L7C">
+                                <rect key="frame" x="0.0" y="108" width="375" height="515"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="515" id="4Lp-Aa-oRt"/>
+                                </constraints>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="e41-4I-72B">
+                                <rect key="frame" x="169" y="347" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="AKm-6a-YbS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hsz-iH-8a1"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dZU-tD-usp" firstAttribute="leading" secondItem="paU-y3-YO8" secondAttribute="leading" id="2EZ-BF-Lho"/>
-                            <constraint firstItem="dZU-tD-usp" firstAttribute="top" secondItem="ExL-Kx-mgL" secondAttribute="bottom" id="IhV-OA-HBm"/>
-                            <constraint firstItem="kHG-6R-bYX" firstAttribute="top" secondItem="dZU-tD-usp" secondAttribute="bottom" id="OEJ-3k-HCK"/>
-                            <constraint firstAttribute="trailing" secondItem="dZU-tD-usp" secondAttribute="trailing" id="rBb-FX-FhQ"/>
+                            <constraint firstItem="Leh-Hf-L7C" firstAttribute="leading" secondItem="2yd-SY-MkT" secondAttribute="leading" id="3WP-Vv-bEM"/>
+                            <constraint firstItem="Leh-Hf-L7C" firstAttribute="trailing" secondItem="2yd-SY-MkT" secondAttribute="trailing" id="6en-Gt-wd9"/>
+                            <constraint firstAttribute="trailing" secondItem="Leh-Hf-L7C" secondAttribute="trailing" id="AQG-Ad-JxN"/>
+                            <constraint firstItem="e41-4I-72B" firstAttribute="centerY" secondItem="Leh-Hf-L7C" secondAttribute="centerY" id="FSF-uM-CYm"/>
+                            <constraint firstItem="kHG-6R-bYX" firstAttribute="top" secondItem="2yd-SY-MkT" secondAttribute="bottom" id="HAH-sn-3cb"/>
+                            <constraint firstAttribute="trailing" secondItem="AKm-6a-YbS" secondAttribute="trailing" id="ImB-Y3-NhZ"/>
+                            <constraint firstItem="Leh-Hf-L7C" firstAttribute="leading" secondItem="paU-y3-YO8" secondAttribute="leading" id="NLX-9W-n3a"/>
+                            <constraint firstItem="2yd-SY-MkT" firstAttribute="top" secondItem="Leh-Hf-L7C" secondAttribute="bottom" id="Olm-ga-EnE"/>
+                            <constraint firstItem="AKm-6a-YbS" firstAttribute="top" secondItem="ExL-Kx-mgL" secondAttribute="bottom" id="RgY-wn-z3k"/>
+                            <constraint firstItem="2yd-SY-MkT" firstAttribute="leading" secondItem="paU-y3-YO8" secondAttribute="leading" id="W1h-Mf-abM"/>
+                            <constraint firstItem="AKm-6a-YbS" firstAttribute="leading" secondItem="paU-y3-YO8" secondAttribute="leading" id="Wkr-iu-b1R"/>
+                            <constraint firstAttribute="trailing" secondItem="2yd-SY-MkT" secondAttribute="trailing" id="YDn-54-fa8"/>
+                            <constraint firstItem="Leh-Hf-L7C" firstAttribute="top" secondItem="AKm-6a-YbS" secondAttribute="bottom" id="dJ1-qZ-auu"/>
+                            <constraint firstItem="e41-4I-72B" firstAttribute="centerX" secondItem="paU-y3-YO8" secondAttribute="centerX" id="xql-O9-tNA"/>
                         </constraints>
                     </view>
                 </viewController>
