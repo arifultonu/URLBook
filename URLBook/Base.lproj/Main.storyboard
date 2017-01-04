@@ -158,7 +158,7 @@
                         <outlet property="adBanner" destination="nNi-eO-LhA" id="UDL-PD-32T"/>
                         <outlet property="segment" destination="Y8N-fE-Htw" id="ScC-7T-V8g"/>
                         <outlet property="tableView" destination="YQm-aM-HpH" id="gIJ-xg-fwh"/>
-                        <segue destination="o7W-cf-eNd" kind="show" identifier="ItemDetailsVC" id="Und-TR-TMb"/>
+                        <segue destination="o7W-cf-eNd" kind="show" identifier="ItemDetailsWebVC" id="Und-TR-TMb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

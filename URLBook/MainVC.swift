@@ -70,17 +70,17 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, GADB
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let objs = controller.fetchedObjects, objs.count>0{
+        if let objs = controller.fetchedObjects, objs.count > 0{
             let item = objs[indexPath.row]
-            performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+            performSegue(withIdentifier: "ItemDetailsWebVC", sender: item)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ItemDetailsVC"{
-            if let destination = segue.destination as? ItemDatailsVC{
-                if let Item = sender as? Item{
-                destination.itemToEdit = Item
+        if segue.identifier == "ItemDetailsWebVC"{
+            if let destination = segue.destination as? ItemDetailWebVC{
+                if let item = sender as? Item{
+                destination.itemToEdit = item
                 }
             }
         }
