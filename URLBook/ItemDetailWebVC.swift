@@ -28,7 +28,8 @@ class ItemDetailWebVC: UIViewController {
            loadItemData()
         }
         
-    
+    loadUrlWebView()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +42,13 @@ class ItemDetailWebVC: UIViewController {
         if let item = itemToEdit {
             SearchBar.text = item.details
         }
+    }
+    
+    func loadUrlWebView() {
+        let text = SearchBar.text
+        let webUrl = URL(string: text!)
+        let webUrlRequest = URLRequest(url: webUrl!)
+        WebView.loadRequest(webUrlRequest)
     }
     
     
