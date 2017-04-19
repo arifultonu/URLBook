@@ -46,7 +46,19 @@ class ItemDetailWebVC: UIViewController {
     
     func loadUrlWebView() {
         let text = SearchBar.text
-        let webUrl = URL(string: text!)
+        
+        //[let urlString = "www.abc.com"
+        // var modifiedURLString = NSString(format:"http://%@", urlString) as String
+        // or just
+        // modifiedURLString = String(format:"http://%@", urlString)
+        // or
+        // let simpler = "http://" + urlString
+        // or use string interplotaion
+        // let simplest = "http://\(urlString)"]
+        
+        
+        let link = String(format:"http://%@", text!)
+        let webUrl = URL(string: link)
         let webUrlRequest = URLRequest(url: webUrl!)
         WebView.loadRequest(webUrlRequest)
     }
@@ -54,8 +66,10 @@ class ItemDetailWebVC: UIViewController {
     
     func searchBarSearchButtonClicked(_ searchbar: UISearchBar){
         searchbar.resignFirstResponder()
+        
         let text = SearchBar.text
-        let webUrl = URL(string: text!)
+        let link = String(format:"http://%@", text!)
+        let webUrl = URL(string: link)
         let webUrlRequest = URLRequest(url: webUrl!)
         WebView.loadRequest(webUrlRequest)
     }
