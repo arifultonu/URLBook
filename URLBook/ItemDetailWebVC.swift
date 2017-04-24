@@ -63,6 +63,7 @@ class ItemDetailWebVC: UIViewController {
         WebView.loadRequest(webUrlRequest)
     }
     
+   
     
     func searchBarSearchButtonClicked(_ searchbar: UISearchBar){
         searchbar.resignFirstResponder()
@@ -80,7 +81,8 @@ class ItemDetailWebVC: UIViewController {
     
     func webViewDidFinishLoad(_ : UIWebView) {
         ActInd.stopAnimating()
+        let currentURL = self.WebView.request?.url?.absoluteString
+        SearchBar.text = currentURL
     }
-    
     
 }
