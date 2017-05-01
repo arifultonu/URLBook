@@ -84,5 +84,6 @@ class ItemDetailWebVC: UIViewController {
         let currentURL = self.WebView.request?.url?.absoluteString
         SearchBar.text = currentURL
     }
+  
     
 }

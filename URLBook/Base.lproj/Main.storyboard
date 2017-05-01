@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sg-Er-JuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="-983.65817091454278"/>
+            <point key="canvasLocation" x="2132" y="-987"/>
         </scene>
         <!--Item Detail WebVC-->
         <scene sceneID="vWj-tO-mGr">
@@ -364,6 +364,13 @@
                             <constraint firstItem="e41-4I-72B" firstAttribute="centerX" secondItem="paU-y3-YO8" secondAttribute="centerX" id="xql-O9-tNA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oKg-0c-fpd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fH0-L4-22v">
+                            <connections>
+                                <segue destination="QuZ-3y-Ijw" kind="show" identifier="itemDetailsAddNew" id="N2H-tD-4gz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ActInd" destination="e41-4I-72B" id="0Je-71-4MV"/>
                         <outlet property="SearchBar" destination="AKm-6a-YbS" id="2vm-ab-lKA"/>
@@ -401,4 +408,7 @@
         <image name="ImageView" width="256" height="256"/>
         <image name="google.png" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="N2H-tD-4gz"/>
+    </inferredMetricsTieBreakers>
 </document>

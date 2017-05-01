@@ -109,7 +109,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, GADB
     
     func attemptFetch(){
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
-        let dateSort = NSSortDescriptor(key: "created", ascending: true)
+        let dateSort = NSSortDescriptor(key: "created", ascending: false )
         let categorySort = NSSortDescriptor(key: "category", ascending: true)
         let titleSort = NSSortDescriptor(key: "title", ascending: true)
         
