@@ -14,12 +14,17 @@ class ItemDatailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var categoryField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
     
+    var newUrl:String = ""
+    
+    
     @IBOutlet weak var thumbImg: UIImageView!
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       detailsField.text = newUrl
         
        // Navigation item controll.
         if let topNavigationItem = self.navigationController?.navigationBar.topItem{

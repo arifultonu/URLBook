@@ -84,6 +84,20 @@ class ItemDetailWebVC: UIViewController {
         let currentURL = self.WebView.request?.url?.absoluteString
         SearchBar.text = currentURL
     }
+    
+    
+    
+    
+    @IBAction func saveThisUrl(_ sender: UIBarButtonItem) {
+        
+        performSegue(withIdentifier: "itemDetailsAddNew", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! ItemDatailsVC
+            
+        destination.newUrl = SearchBar.text!
+    }
   
     
 }

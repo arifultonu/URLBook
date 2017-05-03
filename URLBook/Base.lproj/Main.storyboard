@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sg-Er-JuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2132" y="-987"/>
+            <point key="canvasLocation" x="2140" y="-982"/>
         </scene>
         <!--Item Detail WebVC-->
         <scene sceneID="vWj-tO-mGr">
@@ -367,6 +367,7 @@
                     <navigationItem key="navigationItem" id="oKg-0c-fpd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fH0-L4-22v">
                             <connections>
+                                <action selector="saveThisUrl:" destination="o7W-cf-eNd" id="1ig-Jq-wM7"/>
                                 <segue destination="QuZ-3y-Ijw" kind="show" identifier="itemDetailsAddNew" id="N2H-tD-4gz"/>
                             </connections>
                         </barButtonItem>
