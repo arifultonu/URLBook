@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "URLBook/ItemDatailsVC.swift"
-            timestampString = "515523434.613424"
+            timestampString = "515524563.671776"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "ItemDatailsVC"
             landmarkType = "3">
          </BreakpointContent>

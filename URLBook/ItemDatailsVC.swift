@@ -14,6 +14,17 @@ class ItemDatailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var categoryField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
     
+    
+    /*private var _selectedSong: String!
+    
+    var selectedSong: String {
+        get{
+            return _selectedSong
+        } set{
+    _selectedSong = newValue
+      }
+    }*/
+    
     var newUrl:String = ""
     
     
@@ -24,7 +35,11 @@ class ItemDatailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       detailsField.text = newUrl
+       // detailsField.text = _selectedSong
+        
+        detailsField.text = newUrl
+        
+        
         
        // Navigation item controll.
         if let topNavigationItem = self.navigationController?.navigationBar.topItem{

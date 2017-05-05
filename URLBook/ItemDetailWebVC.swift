@@ -85,8 +85,23 @@ class ItemDetailWebVC: UIViewController {
         SearchBar.text = currentURL
     }
     
+    /*
+    @IBAction func addNewUrlFromBrowser(_ sender: Any) {
+        let songTitle = SearchBar.text
+        performSegue(withIdentifier: "itemDetailsAddNew", sender: songTitle)
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ItemDatailsVC{
+            if let webUrl = sender as? String {
+            destination.selectedSong = webUrl
+                print("url>>>>>>>: "+destination.selectedSong)
+            }
+        }
+    }
+     //
+     
+  */
     
     @IBAction func saveThisUrl(_ sender: UIBarButtonItem) {
         
@@ -95,9 +110,22 @@ class ItemDetailWebVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ItemDatailsVC
+        
+        let urlName = SearchBar.text!
+        
+        if urlName.hasPrefix("http://") {
+            let urll = urlName.index(urlName.startIndex, offsetBy: 7)..<urlName.endIndex
+            let subUrlName = urlName[urll]
             
-        destination.newUrl = SearchBar.text!
+            destination.newUrl = subUrlName
+            
+        } else if urlName.hasPrefix("https://"){
+            let urll = urlName.index(urlName.startIndex, offsetBy: 8)..<urlName.endIndex
+            let subUrlName = urlName[urll]
+            
+            destination.newUrl = subUrlName
+        }
+        
     }
-  
     
 }
